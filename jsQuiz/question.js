@@ -34,13 +34,7 @@ guess(answer) {
 		
 		this.questionIndex++;
 }
-function guess(id, guess) {
-    var button = document.getElementById(id);
-    button.onclick = function() {
-   	 quiz.guess(guess);
-   	 populate();
-    }
-};
+
 function populate() {
 
    	 var element = document.getElementById("question");
