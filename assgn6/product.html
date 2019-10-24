@@ -25,7 +25,7 @@
 
 <ul>
 	<li><div id=roll><img src=https://i.ibb.co/09v1H1S/psroll.png alt= "PUMPKIN SPICE CINNAMON ROLL" height="250"/></div></li>
-	<li><div id=pictures><img src=https://i.ibb.co/SRKHprv/pics.png alt= "More Pictures" height="250"/></div></li>
+	<li><div id=pictures><img id="cinnaroll" src=https://i.ibb.co/SRKHprv/pics.png alt= "More Pictures" height="250"/></div></li>
 	<!-- product description -->
 	<li><h3>DESCRIPTION</h3>
 		<p>Perfect for the fall, our pumpkin spice cinnamon roll is made with<br> real pumpkin and filled with warm spices like cinnamon, nutmeg,<br> and cloves, then baked to golden perfection and topped with your<br> choice of one of our delicious glazes.</p>
@@ -35,7 +35,7 @@
 		</ul>
 		<ul>
 			<!-- product order form: choosing glaze and quantity -->
-			<li><section class="glaze">
+			<li><section onchange="return chooseglaze()" class="glaze">
 	        	<select name="glaze" id="glaze">
 	        		<option value="glaze">GLAZE</option>
 		            <option value="none">NONE</option>
