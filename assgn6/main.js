@@ -3,11 +3,11 @@ function addtocart() {
 }
 
 function chooseglaze() {
-	var x = document.getElementById("glaze").value;
+	var x = document.getElementById('glaze').value;
 	if (x == "none") {
-		document.getElementById("cinnaroll").src= 'https://i.ibb.co/DL7QkWd/noglaze.png';
+		document.getElementById('cinnaroll').src= 'https://i.ibb.co/DL7QkWd/noglaze.png';
 	}
 	if  (x == "double chocolate") {
-		document.getElementById("cinnaroll").src= 'https://i.ibb.co/FH8PJFn/chocolate.png';
+		document.getElementById('cinnaroll').src= 'https://i.ibb.co/FH8PJFn/chocolate.png';
 	}
 }
