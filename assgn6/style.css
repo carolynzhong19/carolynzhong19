@@ -6,6 +6,18 @@ nav {
 	font-size: 30px;
 }
 
+.box {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 19px
+}
+
+#mybox {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 19px
+}
+
 h1 {
 	color: #1B1464;
 	font-family: Acumin Pro Condensed;
