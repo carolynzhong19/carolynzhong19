@@ -14,6 +14,22 @@ function chooseglaze() {
 	}
 }
 
+function pricechange() {
+	var x = document.getElementById('quantity').value;
+	if (x == "1") {
+		document.getElementById('price').value= "TOTAL PRICE: $6";
+	}
+	if (x == "3") {
+		document.getElementById('price').value= "TOTAL PRICE: $15";
+	}
+	if (x == "6") {
+		document.getElementById('price').value= "TOTAL PRICE: $27";
+	}
+	if  (x == "12") {
+		document.getElementById('price').value= "TOTAL PRICE: $48";
+	} 
+}
+
 function addtocart() {
 	var x = document.getElementById('quantity').value;
 	if (x == "1") {

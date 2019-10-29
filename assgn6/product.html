@@ -43,7 +43,7 @@
 		            <option value="vanilla milk">VANILLA MILK</option>
 		            <option value="double chocolate">DOUBLE CHOCOLATE</option>
 	    	</select></section></li>
-	    	<li><section class="quantity">
+	    	<li><section onchange="return pricechange()" class="quantity">
             	<select name="quantity" id="quantity">
             		<option value="quantity">QUANTITY</option>
 	            	<option value="1">1</option>
@@ -53,7 +53,7 @@
         	</select></section></li>
         	<li><button onclick="return addtocart()">ADD TO CART</button>
 
-			<li><h3>TOTAL PRICE: $</h3></li>
+			<li><h3 id="price">TOTAL PRICE: $</h3></li>
 		</ul>
 </ul>
 
