@@ -1,7 +1,3 @@
-function addtocart() {
-	document.getElementById('cart').src='https://i.ibb.co/TTCWwG8/box1.png'
-}
-
 function chooseglaze() {
 	var x = document.getElementById('glaze').value;
 	if (x == "none") {
@@ -16,4 +12,20 @@ function chooseglaze() {
 	if  (x == "double chocolate") {
 		document.getElementById('cinnaroll').src= 'https://i.ibb.co/FH8PJFn/chocolate.png';
 	}
+}
+
+function addtocart() {
+	var x = document.getElementById('quantity').value;
+	if (x == "1") {
+		document.getElementById('cart').src= 'https://i.ibb.co/5L5S2WD/box-01.png';
+	}
+	if (x == "3") {
+		document.getElementById('cart').src= 'https://i.ibb.co/Bc0kNCw/box-02.png';
+	}
+	if (x == "6") {
+		document.getElementById('cart').src= 'https://i.ibb.co/GxW6ykR/box-03.png';
+	}
+	if  (x == "12") {
+		document.getElementById('cart').src= 'https://i.ibb.co/3MpkTty/box-04.png';
+	} 
 }
