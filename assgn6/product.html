@@ -35,7 +35,7 @@
 		</ul>
 		<ul>
 			<!-- product order form: choosing glaze and quantity -->
-			<li><section onchange="return chooseglaze()" class="glaze">
+			<li><section onchange="return chooseglaze()" onchange="return saveroll()" class="glaze">
 	        	<select name="glaze" id="glaze">
 	        		<option value="glaze">GLAZE</option>
 		            <option value="none">NONE</option>
@@ -51,7 +51,7 @@
 	            	<option value="6">6</option>
 	            	<option value="12">12</option>
         	</select></section></li>
-        	<li><button onclick="return addtocart()" onclick="return saveroll()">ADD TO CART</button>
+        	<li><button onclick="return addtocart()" id="save">ADD TO CART</button>
 
 			<li><h4 id="price">TOTAL PRICE: $</h3></li>
 		</ul>

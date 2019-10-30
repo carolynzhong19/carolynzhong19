@@ -23,13 +23,23 @@
 
 	<!-- box -->
 	<ul>
-		<li><div onclick="return remove()" ><img src=https://i.ibb.co/wKLcr49/x.png alt= "remove" height="31"/></div></li>
-		<li><div onload="return onload()"></div></li>
-		<li><h3>PUMPKIN SPICE CINNAMON ROLL<br>WITH<div onload="return loadglaze()"></div></h3></li>
+		<div id="item"><li><button onclick="return remove()"><img src=https://i.ibb.co/wKLcr49/x.png alt= "remove" height="31"/></button></li>
+		<li><div onload="return loadimage()"></div></li>
+		<li><div onload="return loadroll()"></div></li>
 		<li><img src=https://i.ibb.co/zbbzN83/image.png alt= "minus" height="31"/></li>
 		<li><div onload="return loadquantity()"></div></li>
 		<li><img src=https://i.ibb.co/QXns0HJ/image.png alt= "plus" height="31"/></li>
-		<li><div id="summary"><img src=https://i.ibb.co/JFz6LDT/ordersummary.png alt= "ORDER SUMMARY" height="450"/></div></li>
+		<li><div onload="return loadprice()"></div></li>
+		<li><h3>ORDER SUMMARY</h3>
+			<ul>
+				<li><h4>SUBTOTAL</h4></li>
+				<li><div onload="return loadprice()"></div></li>
+			</ul>
+			<ul>
+				<li><h4>TOTAL</h4></li>
+				<li><div onload="return loadprice()"></div></li>
+			</ul>
+			<img src=https://i.ibb.co/4WM525R/check-out.png alt= "CHECKOUT" height="35"/></div>
 	</ul>
 
 </html>

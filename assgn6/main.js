@@ -1,3 +1,4 @@
+// change image based off glaze choice
 function chooseglaze() {
 	var x = document.getElementById('glaze').value;
 	if (x == "none") {
@@ -14,6 +15,7 @@ function chooseglaze() {
 	}
 }
 
+// update price based on quantity choice
 function pricechange() {
 	var x = document.getElementById('quantity').value;
 	if (x == "1") {
@@ -30,6 +32,7 @@ function pricechange() {
 	} 
 }
 
+// update number in cart when added to cart
 function addtocart() {
 	var x = document.getElementById('quantity').value;
 	if (x == "1") {
@@ -47,21 +50,35 @@ function addtocart() {
 }
 
 function saveroll() {
-
+	var glaze = document.getElementById('glaze').value;
+	localStorage.setItem('savedroll', JSON.stringify(glaze));
 }
 
+// remove item on X button
 function remove() {
-	document.getElementById('item').remove();
+	document.getElementById('item').innerHTML= "EMPTY CART!";
 }
 
-function onload() {
+// update image based on glaze choice on load
+function loadimage() {
+	var image = JSON.parse(localStorage.getItem('savedroll'));
+	console.log(image);
+	// update page based on choices
+	document.getElementById("cinnamonroll").src = 'https://i.ibb.co/DL7QkWd/noglaze.png';
+	document.getElementById("cinnamonroll").textContent = "PUMPKIN SPICE CINNAMON ROLL" + "  " + "WITH" + glaze;
+}
+
+// update glaze choice in description on load
+function loadroll() {
 
 }
 
-function loadglaze() {
-
-}
-
+// update quantity choice on load
 function loadquantity() {
+
+}
+
+// update price on load
+function loadprice() {
 
 }
