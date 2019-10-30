@@ -117,7 +117,34 @@ li {
 	margin-bottom: 0px;
 }
 
+#image {
+	margin-top: 23px;
+}
 
 #description {
-	margin-top: 40px;
+	color: #1B1464;
+	font-family: Acumin Pro Condensed;
+	font-weight: normal;
+	font-size: 31px;
+	margin-top: 55px;
+}
+
+#quant {
+	color: #1B1464;
+	font-family: Acumin Pro Condensed;
+	font-weight: normal;
+	font-size: 31px;
+	margin-top: 55px;
+}
+
+#subtotal {
+	color: #1B1464;
+	font-family: Acumin Pro Condensed;
+	font-weight: normal;
+	font-size: 31px;
+	margin-top: 50px;
+}
+
+#summary {
+	margin-left: 35px;
 }
