@@ -17,16 +17,16 @@ function chooseglaze() {
 function pricechange() {
 	var x = document.getElementById('quantity').value;
 	if (x == "1") {
-		document.getElementById('price').value= "TOTAL PRICE: $6";
+		document.getElementById('price').innerHTML= "TOTAL PRICE: $6";
 	}
 	if (x == "3") {
-		document.getElementById('price').value= "TOTAL PRICE: $15";
+		document.getElementById('price').innerHTML= "TOTAL PRICE: $15";
 	}
 	if (x == "6") {
-		document.getElementById('price').value= "TOTAL PRICE: $27";
+		document.getElementById('price').innerHTML= "TOTAL PRICE: $27";
 	}
 	if  (x == "12") {
-		document.getElementById('price').value= "TOTAL PRICE: $48";
+		document.getElementById('price').innerHTML= "TOTAL PRICE: $48";
 	} 
 }
 
@@ -44,4 +44,24 @@ function addtocart() {
 	if  (x == "12") {
 		document.getElementById('cart').src= 'https://i.ibb.co/3MpkTty/box-04.png';
 	} 
+}
+
+function saveroll() {
+
+}
+
+function remove() {
+	document.getElementById('item').remove();
+}
+
+function onload() {
+
+}
+
+function loadglaze() {
+
+}
+
+function loadquantity() {
+
 }
