@@ -32,7 +32,7 @@ function pricechange() {
 	} 
 }
 
-// update number in cart when added to cart
+// update number in cart when added to cart and local storage
 function addtocart() {
 	var x = document.getElementById('quantity').value;
 	if (x == "1") {
@@ -54,7 +54,7 @@ function addtocart() {
 	var selectedQuantity  = document.getElementById("quantity").selectedIndex;
 	var actualQuantity = document.getElementById("quantity").options[selectedId].innerHTML;
 
-	cartItems = {glaze: actualGlaze, quantity: ActualQuantity};
+	cartItems = {glaze: actualGlaze, quantity: actualQuantity};
 
 	localStorage.setItem("productDetails", JSON.stringify(cartItems));
 }
@@ -70,5 +70,5 @@ function loadroll() {
 	details = JSON.parse(details);
 
 	document.getElementById('description').textContent = "PUMPKIN SPICE CINNAMON ROLL WITH" + " " + details.glaze;
-	document.getElementById('quantity').value = details.quantity;
+	document.getElementById('quant').value = details.quantity;
 }
