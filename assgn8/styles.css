@@ -10,19 +10,51 @@ li {
 	padding: 19px;
 }
 
-a {
+h1 {
+	color: #333333;
 	font-family: Avenir;
-	color: black;
+	font-weight: bold;
+	font-size: 60px;
 }
 
-a:hover {
+h2 {
+	color: #333333;
 	font-family: Avenir;
-	color: #F59092;
+	font-weight: normal;
+	font-size: 30px;
 }
 
-a:active {
+p {
+	color: #333333;
 	font-family: Avenir;
-	color: #F59092;
+	font-weight: lighter;
+	font-size: 20px;
 }
 
+body {
+	background-color: #c39e9e;
+}
 
+#home {
+  background-color: #c39e9e;
+}
+
+#education {
+  background-color: #f3e3e1;
+}
+
+#experience {
+  background-color: #f0e4d8;
+}
+
+#leadership {
+  background-color: #f6f5f0;
+}
+
+#skills {
+  background-color: #f3e3e1;
+}
+
+#contact {
+  background-color: #c39e9e;
+}
