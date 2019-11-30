@@ -25,18 +25,4 @@ a:active {
 	color: #F59092;
 }
 
-easyScrollDots({
 
-  // sets to true if you have a fixed navigation
-
-  'fixedNav': false,
-
-  // unique ID of your fixed navigation
-
-  'fixedNavId': '',
-
-  // set to true if your navigation is only sticky when scrolling up
-
-  'fixedNavUpward': false
-
-});
