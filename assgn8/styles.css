@@ -33,6 +33,13 @@ h2 {
 	font-size: 30px;
 }
 
+h3 {
+	color: #333333;
+	font-family: Avenir;
+	font-weight: normal;
+	font-size: 30px;
+}
+
 p {
 	color: #333333;
 	font-family: Avenir;
@@ -42,7 +49,7 @@ p {
 
 #about {
 	background-color: #c39e9e;
-	  text-align: center;
+	text-align: center;
 }
 
 #education {
