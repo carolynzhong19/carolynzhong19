@@ -1,3 +1,11 @@
+.nav {
+	color: #c39e9e;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
 ul {
 	list-style-type: none;
   	margin: 0;
@@ -13,14 +21,15 @@ li {
 h1 {
 	color: #333333;
 	font-family: Avenir;
-	font-weight: bold;
+	font-weight: bolder;
 	font-size: 60px;
+	text-transform: uppercase;
 }
 
 h2 {
 	color: #333333;
 	font-family: Avenir;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 30px;
 }
 
@@ -31,30 +40,30 @@ p {
 	font-size: 20px;
 }
 
-body {
+#about {
 	background-color: #c39e9e;
-}
-
-#home {
-  background-color: #c39e9e;
+	  text-align: center;
 }
 
 #education {
-  background-color: #f3e3e1;
+  	background-color: #f3e3e1;
 }
 
 #experience {
-  background-color: #f0e4d8;
+  	background-color: #f0e4d8;
 }
 
 #leadership {
-  background-color: #f6f5f0;
+  	background-color: #f6f5f0;
+  	text-align: center;
 }
 
 #skills {
-  background-color: #f3e3e1;
+  	background-color: #f3e3e1;
+  	text-align: center;
 }
 
 #contact {
-  background-color: #c39e9e;
+  	background-color: #c39e9e;
+  	text-align: center;
 }
