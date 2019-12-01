@@ -12,6 +12,7 @@ nav {
 	background-color: #c39e9e;
 }
 
+/* positioning items horizontally with no bullets */
 ul {
 	list-style-type: none;
   	margin: 0;
@@ -30,9 +31,10 @@ a {
 	font-weight: bolder;
 	font-size: 100px;
 	text-transform: uppercase;
-	text-decoration: none;
+	text-decoration: none; /* remove underline for links */
 }
 
+/* different sizing for corner logo */
 #cz {
 	margin-left: 50px;
 	margin-right: 310px;
@@ -72,22 +74,22 @@ p {
 	text-align: center;
 }
 
+#educationtitle {
+	color: #c39e9e;
+}
+
 #education {
   	background-color: #f3e3e1;
-  	position: relative;
+  	text-align: center;
 }
 
 .container {
-	width: 70%;
-	height: 60%;
-	padding-top: 50px;
 	text-align: center;
 }
 
-.centered {
-  position: absolute; 
-  top: 20%;
-  left: 30%;
+#educationtext {
+  	text-align: left;
+  	display: inline-block;
 }
 
 #degree {
@@ -97,8 +99,19 @@ p {
 	font-size: 20px;
 }
 
+#experiencetitle {
+	text-align: left;
+	margin-left: 130px;
+}
+
 #experience {
   	background-color: #f0e4d8;
+  	text-align: center;
+}
+
+#experiencetext {
+  	text-align: left;
+  	display: inline-block;
 }
 
 #leadership {
@@ -108,10 +121,14 @@ p {
 
 #skills {
   	background-color: #f3e3e1;
-  	text-align: center;
+}
+
+#gray {
+	text-align: left;
 }
 
 #contact {
   	background-color: #c39e9e;
   	text-align: center;
+  	align-items: center;
 }
