@@ -46,6 +46,7 @@ h1 {
 	font-weight: bolder;
 	font-size: 60px;
 	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 
 h2 {
@@ -53,6 +54,8 @@ h2 {
 	font-family: Avenir;
 	font-weight: bold;
 	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 h3 {
@@ -69,6 +72,10 @@ p {
 	font-size: 20px;
 }
 
+.container {
+	text-align: center;
+}
+
 #about {
 	background-color: #c39e9e;
 	text-align: center;
@@ -81,10 +88,6 @@ p {
 #education {
   	background-color: #f3e3e1;
   	text-align: center;
-}
-
-.container {
-	text-align: center;
 }
 
 #educationtext {
@@ -101,34 +104,61 @@ p {
 
 #experiencetitle {
 	text-align: left;
-	margin-left: 130px;
+	margin-left: 100px;
 }
 
 #experience {
-  	background-color: #f0e4d8;
-  	text-align: center;
+  	background-color: #f6f5f0;
+  	text-align: left;
 }
 
-#experiencetext {
-  	text-align: left;
-  	display: inline-block;
+.experiences {
+	margin-top: 55px;
+}
+
+#leadershiptitle {
+	color: #f6f5f0;
+	text-align: center;
+	display: inline-block;
 }
 
 #leadership {
   	background-color: #f6f5f0;
-  	text-align: center;
+  	text-align: left;
+}
+
+.leftmargin {
+	margin-left: 90px;
+}
+
+.bottommargin {
+	margin-bottom: 90px;
 }
 
 #skills {
   	background-color: #f3e3e1;
+  	text-align: center;
 }
 
-#gray {
+#skillstext {
+	display: inline-block;
+}
+
+#contacttitle {
 	text-align: left;
+	margin-left: 100px;
 }
 
 #contact {
   	background-color: #c39e9e;
   	text-align: center;
-  	align-items: center;
+}
+
+#centered {
+	margin-left: 35%;
+	margin-right: 35%
+}
+
+.background {
+	width: 100%;
 }
