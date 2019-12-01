@@ -1,9 +1,15 @@
 .nav {
-	color: #c39e9e;
+	color: #f6f5f0;
 	font-family: Avenir;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 25px;
+	text-align: right;
 	text-transform: uppercase;
+	margin-top: 50px;
+}
+
+nav {
+	background-color: #c39e9e;
 }
 
 ul {
@@ -16,6 +22,20 @@ ul {
 li {
 	float:left;
 	padding: 19px;
+}
+
+a {
+	color: #f6f5f0;
+	font-family: Avenir;
+	font-weight: bolder;
+	font-size: 100px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#cz {
+	margin-left: 50px;
+	margin-right: 310px;
 }
 
 h1 {
@@ -54,6 +74,27 @@ p {
 
 #education {
   	background-color: #f3e3e1;
+  	position: relative;
+}
+
+.container {
+	width: 70%;
+	height: 60%;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.centered {
+  position: absolute; 
+  top: 20%;
+  left: 30%;
+}
+
+#degree {
+	color: #333333;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 #experience {
