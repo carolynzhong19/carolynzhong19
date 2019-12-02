@@ -73,12 +73,25 @@ p {
 }
 
 .container {
+	position: relative;
 	text-align: center;
 }
 
 #about {
 	background-color: #c39e9e;
 	text-align: center;
+}
+
+#intro {
+	margin-left: 60px;
+	margin-top: 50px;
+}
+
+#abouttext {
+	position: absolute;
+  	top: 65%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 }
 
 #educationtitle {
@@ -92,7 +105,10 @@ p {
 
 #educationtext {
   	text-align: left;
-  	display: inline-block;
+  	position: absolute;
+  	top: 40%;
+  	left: 45%;
+  	transform: translate(-50%, -50%);
 }
 
 #degree {
@@ -118,8 +134,10 @@ p {
 
 #leadershiptitle {
 	color: #f6f5f0;
-	text-align: center;
-	display: inline-block;
+	position: absolute;
+  	top: 40%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 }
 
 #leadership {
@@ -141,8 +159,10 @@ p {
 }
 
 #skillstext {
-	display: inline-block;
-}
+	position: absolute;
+  	top: 60%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);}
 
 #contacttitle {
 	text-align: left;
