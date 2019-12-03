@@ -8,26 +8,25 @@
 	<!-- js library full page.js -->
 	<link rel="stylesheet" type="text/css" href="fullpage.css"/>
 	<script type="text/javascript" src="fullpage.js"></script>
-	<!-- navigation bar -->
-	<nav>
-		<ul>
-			<li><div id="cz"><a href="./index.html">CZ</a></div></li>
-			<li><div class="nav">EDUCATION</div></li>
-			<li><div class="nav">EXPERIENCE</div></li>
-			<li><div class="nav">LEADERSHIP</div></li>
-			<li><div class="nav">SKILLS</div></li>
-			<li><div class="nav">CONTACT</div></li>
-   		</ul>
-    </nav>
 </head>
 
-<body>
+<body class="fp-auto-height-responsive">
 
 <!-- full page js -->
 <div id="fullpage">
-
 	<!-- about section -->
-	<div class="section">
+	<div class="section" class="fp-auto-height-responsive">
+		<!-- navigation bar -->
+		<nav>
+			<ul>
+				<li><div id="cz"><a href="#home">CZ</a></div></li>
+				<li><a class="nav" href="#education">EDUCATION</a></li>
+				<li><a class="nav" href="#experience">EXPERIENCE</a></li>
+				<li><a class="nav" href="#leadership">LEADERSHIP</a></li>
+				<li><a class="nav" href="#skills">SKILLS</a></li>
+				<li><a class="nav" href="#contact">CONTACT</a></li>
+	   		</ul>
+	    </nav>
 		<div id="about">
 			<img id="intro" src=https://i.ibb.co/jJ27CJh/home.png width=1200px>
 			<h3 id="abouttext">I'm a user experience designer currently<br>studying at Carnegie Mellon University.</h3>
@@ -35,13 +34,13 @@
 	</div>
 
 	<!-- education section -->
-	<div class="section">
-		<div id="education">
+	<div class="section" class="fp-auto-height-responsive">
+		<div id="edu">
 			<div class="container">
 			<img src=https://i.ibb.co/bdXpRdc/education-with-scotty-dog.png width=70%>
 				<div id="educationtext">
 					<h1 id="educationtitle">EDUCATION</h1>
-					<h2>Carnegie Mellon University, May 2021</h2>
+					<p><h2>Carnegie Mellon University, May 2021</h2></p>
 					<div id="degree">BS in Human Computer Interaction & Business Administration<br>Minor in Design</div>
 					<p><strong>RELEVANT COURSEWORK:</strong> Interaction Design Studio,<br>Communication Design Fundamentals, Programming<br>Usable Interfaces, Human Experience in Design</p>
 				</div>
@@ -50,8 +49,8 @@
 	</div>
 
 	<!-- experience section -->
-	<div class="section">
-		<div id="experience">
+	<div class="section" class="fp-auto-height-responsive">
+		<div id="exp">
 			<ul>
 				<li><h1 id="experiencetitle">EXPERIENCE</h1></li>
 				<li><img src=https://i.ibb.co/ZxrQ8MG/experience-with-logos.png width=350px></li>
@@ -78,14 +77,14 @@
 	</div>
 
 	<!-- leadership header -->
-	<div class="section">
+	<div class="section" class="fp-auto-height-responsive">
 		<div class="container">
 			<img src=https://i.ibb.co/f1NFxtk/leadership.png width=100%>
 			<h1 id="leadershiptitle">LEADERSHIP</h1>
 		</div>
 
 		<!-- leadership section -->
-		<div id="leadership">
+		<div id="leader" class="fp-auto-height-responsive">
 			<ul>
 				<li class="leftmargin"><img src=https://i.ibb.co/7SGMx77/BSAC.png width=200px></li>
 				<li><p>Organize extracurricular activities<br>for undergraduate HCI students and<br>provide feedback to improve program</p></li>
@@ -102,8 +101,8 @@
 	</div>
 
 	<!-- skills section -->
-	<div class="section">
-		<div id="skills">
+	<div class="section" class="fp-auto-height-responsive">
+		<div id="skill">
 			<h1>SKILLS</h1>
 			<div class="container">
 			<img src=https://i.ibb.co/PCfZXXb/skills.png width=60%>
@@ -136,8 +135,8 @@
 	</div>
 
 	<!-- contact section -->
-	<div class="section">
-		<div id="contact">
+	<div class="section" class="fp-auto-height-responsive">
+		<div id="cont">
 			<h1 id="contacttitle">CONTACT</h1>
 			<h3>Let's stay connected.</h3>
 			<ul id="centered">
@@ -152,6 +151,86 @@
 	</div>
 
 </div>
+
+<script type="text/javascript">
+var myFullpage = new fullpage('#fullpage', {
+	//Navigation
+	menu: '#menu',
+	lockAnchors: false,
+	anchors:['home', 'education', 'experience', 'leadership', 'skills', 'contact'],
+	navigation: true,
+	navigationPosition: 'right',
+	navigationTooltips: ['home', 'education', 'experience', 'leadership', 'skills', 'contact'],
+	showActiveTooltip: true,
+
+	//Scrolling
+	css3: true,
+	scrollingSpeed: 700,
+	autoScrolling: true,
+	fitToSection: true,
+	fitToSectionDelay: 1000,
+	scrollBar: false,
+	easing: 'easeInOutCubic',
+	easingcss3: 'ease',
+	loopBottom: false,
+	loopTop: false,
+	loopHorizontal: true,
+	continuousVertical: false,
+	continuousHorizontal: false,
+	scrollHorizontally: false,
+	interlockedSlides: false,
+	dragAndMove: false,
+	offsetSections: false,
+	resetSliders: false,
+	fadingEffect: false,
+	normalScrollElements: '#element1, .element2',
+	scrollOverflow: false,
+	scrollOverflowReset: false,
+	scrollOverflowOptions: null,
+	touchSensitivity: 15,
+	bigSectionsDestination: null,
+
+	//Accessibility
+	keyboardScrolling: true,
+	animateAnchor: true,
+	recordHistory: true,
+
+	//Design
+	controlArrows: true,
+	verticalCentered: true,
+	sectionsColor : ['c39e9e', 'f3e3e1', 'f6f5f0', 'f6f5f0', 'f3e3e1', 'c39e9e'],
+	paddingTop: '3em',
+	paddingBottom: '10px',
+	fixedElements: '#header',
+	responsiveWidth: 0,
+	responsiveHeight: 0,
+	responsiveSlides: false,
+	parallax: false,
+	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+	cards: false,
+	cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+
+	//Custom selectors
+	sectionSelector: '.section',
+	slideSelector: '.slide',
+
+	lazyLoading: false,
+
+	//events
+	onLeave: function(origin, destination, direction){},
+	afterLoad: function(origin, destination, direction){},
+	afterRender: function(){},
+	afterResize: function(width, height){},
+	afterReBuild: function(){},
+	afterResponsive: function(isResponsive){},
+	afterSlideLoad: function(section, origin, destination, direction){},
+	onSlideLeave: function(section, origin, destination, direction){}
+
+});
+
+</script>
+
+<div id="fp-nav" class="fp-right"
 
 </body>
 

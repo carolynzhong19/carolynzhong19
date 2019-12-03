@@ -12,6 +12,10 @@ nav {
 	background-color: #c39e9e;
 }
 
+a {
+	font-size: 20px;
+}
+
 /* positioning items horizontally with no bullets */
 ul {
 	list-style-type: none;
@@ -98,7 +102,7 @@ p {
 	color: #c39e9e;
 }
 
-#education {
+#edu {
   	background-color: #f3e3e1;
   	text-align: center;
 }
@@ -123,7 +127,7 @@ p {
 	margin-left: 100px;
 }
 
-#experience {
+#exp {
   	background-color: #f6f5f0;
   	text-align: left;
 }
@@ -140,7 +144,7 @@ p {
   	transform: translate(-50%, -50%);
 }
 
-#leadership {
+#leader {
   	background-color: #f6f5f0;
   	text-align: left;
 }
@@ -153,7 +157,7 @@ p {
 	margin-bottom: 90px;
 }
 
-#skills {
+#skill {
   	background-color: #f3e3e1;
   	text-align: center;
 }
@@ -169,7 +173,7 @@ p {
 	margin-left: 100px;
 }
 
-#contact {
+#cont {
   	background-color: #c39e9e;
   	text-align: center;
 }
