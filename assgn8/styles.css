@@ -34,7 +34,6 @@ a {
 	color: #f6f5f0;
 	font-family: Avenir;
 	font-size: 100px;
-	text-transform: uppercase;
 	text-decoration: none; /* remove underline for links */
 }
 
@@ -42,6 +41,7 @@ a {
 #cz {
 	margin-left: 50px;
 	margin-right: 310px;
+	font-family: Avenir;
 	font-style: bolder;
 }
 
@@ -130,7 +130,11 @@ p {
 }
 
 .experiences {
-	margin-top: 55px;
+	margin-left: 0px;
+	font-family: Avenir;
+	font-size: 30px;
+	color: #333333;
+	text-decoration: underline;
 }
 
 #leadershiptitle {
