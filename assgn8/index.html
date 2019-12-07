@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- css -->
     <link href="styles.css" type="text/css" rel="stylesheet">
     <!-- javascript -->
@@ -13,8 +11,13 @@
 </head>
 
 <body class="fp-auto-height-responsive">
-<!-- navigation bar -->
-		<div id="navbar" style="background-color:#c39e9e">
+
+<!-- full page js -->
+<div id="fullpage">
+	<!-- about section -->
+	<div class="section" class="fp-auto-height-responsive" style="background-color:#c39e9e">
+		<!-- navigation bar -->
+		<nav>
 			<ul>
 				<li><div id="cz"><a href="#home">CZ</a></div></li>
 				<li><a class="nav" href="#education">EDUCATION</a></li>
@@ -23,11 +26,7 @@
 				<li><a class="nav" href="#skills">SKILLS</a></li>
 				<li><a class="nav" href="#contact">CONTACT</a></li>
 	   		</ul>
-	    </div>
-<!-- full page js -->
-<div id="fullpage">
-	<!-- about section -->
-	<div class="section" class="fp-auto-height-responsive" class="container" style="background-color:#c39e9e">
+	    </nav>
 		<div id="about">
 			<img id="intro" src=https://i.ibb.co/jJ27CJh/home.png width=1200px>
 			<h3 id="abouttext">I'm a user experience designer currently<br>studying at Carnegie Mellon University.</h3>
@@ -35,8 +34,9 @@
 	</div>
 
 	<!-- education section -->
-	<div class="section" class="fp-auto-height-responsive" class="container" style="background-color:#f3e3e1">
+	<div class="section" class="fp-auto-height-responsive" style="background-color:#f3e3e1">
 		<div id="edu">
+			<!-- image as container for text -->
 			<div class="container">
 			<img src=https://i.ibb.co/bdXpRdc/education-with-scotty-dog.png width=70%>
 				<div id="educationtext">
@@ -50,12 +50,12 @@
 	</div>
 
 	<!-- experience section -->
-	<div class="section" class="fp-auto-height-responsive" class="container" style="background-color:#f6f5f0">
+	<div class="section" class="fp-auto-height-responsive" style="background-color:#f6f5f0">
 		<div id="exp">
-			<div class="row">
-				<div class="col-sm-3"><h1 id="experiencetitle">EXPERIENCE</h1></div>
-				<div class="col-sm-3"><img src=https://i.ibb.co/ZxrQ8MG/experience-with-logos.png></div>
-				<div class="col-sm-6"><h2>Biomotivate</h2>
+			<ul>
+				<li><h1 id="experiencetitle">EXPERIENCE</h1></li>
+				<li><img src=https://i.ibb.co/ZxrQ8MG/experience-with-logos.png width=350px></li>
+				<li><h2>Biomotivate</h2>
 						<p><strong>ROLE:</strong> UI/UX Design Intern<br>
 						Designed user interface and experience of tools<br>
 						for those affected by substance abuse disorder<br>
@@ -72,13 +72,13 @@
 						Designed tool for students making a career switch<br>
 						from end to end: understanding user challenges and<br>
 						needs, to ideating using sketches and wireframes, to<br>
-						finally designing high fidelity prototype</p></div>
-			</div>
+						finally designing high fidelity prototype</p></li>
+			</ul>	
 		</div>
 	</div>
 
 	<!-- leadership header -->
-	<div class="section" class="fp-auto-height-responsive" class="container" style="background-color:#f6f5f0">
+	<div class="section" class="fp-auto-height-responsive" style="background-color:#f6f5f0">
 		<div class="container">
 			<img src=https://i.ibb.co/f1NFxtk/leadership.png width=100%>
 			<h1 id="leadershiptitle">LEADERSHIP</h1>
@@ -86,27 +86,28 @@
 
 		<!-- leadership section -->
 		<div id="leader" class="fp-auto-height-responsive">
-			<div class="row">
-				<div class="col-sm-3"><img src=https://i.ibb.co/7SGMx77/BSAC.png></div>
-				<div class="col-sm-3"><p>Organize extracurricular activities<br>for undergraduate HCI students and<br>provide feedback to improve program</p></div>
-				<div class="col-sm-3"><img src=https://i.ibb.co/Dbt5mcq/ta.png></div>
-				<div class="col-sm-3"><p>Assist professor and students in<br>Tepper Undergraduate Business<br>Organizational Behavior course</p></div>
-			</div>
-			<div class="row">
-				<div class="col-sm-3"><img src=https://i.ibb.co/VHYtHqF/peer-tutor.png></div>
-				<div class="col-sm-3"><p>Coordinate fellow tutors and tutor<br>peers in multivariate analysis, micro<br>and macro economics, and accounting</p></div>
-				<div class="col-sm-3"><img src=https://i.ibb.co/4J4jRPr/booth.png></div>
-				<div class="col-sm-3"><p>Lead, plan, and design the creation<br>of Taiwanese Student Association's<br>booth for CMU Spring Carnival</p></div>
-			</div>
+			<ul>
+				<li class="leftmargin"><img src=https://i.ibb.co/7SGMx77/BSAC.png width=200px></li>
+				<li><p>Organize extracurricular activities<br>for undergraduate HCI students and<br>provide feedback to improve program</p></li>
+				<li><img src=https://i.ibb.co/Dbt5mcq/ta.png width=200px></li>
+				<li class="bottommargin"><p>Assist professor and students in<br>Tepper Undergraduate Business<br>Organizational Behavior course</p></li>
+			</ul>
+			<ul>
+				<li class="leftmargin"><img src=https://i.ibb.co/VHYtHqF/peer-tutor.png width=200px></li>
+				<li><p>Coordinate fellow tutors and tutor<br>peers in multivariate analysis, micro<br>and macro economics, and accounting</p></li>
+				<li><img src=https://i.ibb.co/4J4jRPr/booth.png width=200px></li>
+				<li class="bottommargin"><p>Lead, plan, and design the creation<br>of Taiwanese Student Association's<br>booth for CMU Spring Carnival</p></li>
+			</ul>
 		</div>
 	</div>
 
 	<!-- skills section -->
-	<div class="section" class="fp-auto-height-responsive" class="container" style="background-color:#f3e3e1">
+	<div class="section" class="fp-auto-height-responsive" style="background-color:#f3e3e1">
 		<div id="skill">
 			<h1>SKILLS</h1>
+			<!-- image as container for text -->
 			<div class="container">
-			<img src=https://i.ibb.co/PCfZXXb/skills.png>
+			<img src=https://i.ibb.co/PCfZXXb/skills.png width=60%>
 				<div id="skillstext">
 					<ul>
 						<li><h2>RESEARCH</h2>
@@ -136,23 +137,23 @@
 	</div>
 
 	<!-- contact section -->
-	<div class="section" class="fp-auto-height-responsive" class="container" style="background-color:#c39e9e">
+	<div class="section" class="fp-auto-height-responsive" style="background-color:#c39e9e">
 		<div id="cont">
 			<h1 id="contacttitle">CONTACT</h1>
 			<h3>Let's stay connected.</h3>
+			<!-- email/social media image links -->
 			<ul id="centered">
 				<li><a href="mailto:carolynz@andrew.cmu.edu"><img src=https://i.ibb.co/KVzz9SX/social-media-01.png alt="email" height=100px></a></li>
 				<li><a href="https://www.linkedin.com/in/carolynzhong/"><img src=https://i.ibb.co/ygRjQQ3/social-media-02.png alt="linkedin" height=100px></a></li>
 				<li><a href="https://github.com/carolynzhong19"><img src=https://i.ibb.co/N77xtrV/social-media-03.png alt="github" height=100px></a></li>
 			</ul>
 		</div>
-
-		<!-- footer -->
+		<!-- decorative footer -->
 		<img class="background" src=https://i.ibb.co/prpBDgZ/footer.png>
 	</div>
-
 </div>
 
+<!-- implementing javascript library fullpage.js -->
 <script type="text/javascript">
 var myFullpage = new fullpage('#fullpage', {
 	//Navigation
@@ -163,7 +164,6 @@ var myFullpage = new fullpage('#fullpage', {
 	navigationPosition: 'right',
 	navigationTooltips: ['home', 'education', 'experience', 'leadership', 'skills', 'contact'],
 	showActiveTooltip: true,
-
 	//Scrolling
 	css3: true,
 	scrollingSpeed: 700,
@@ -190,12 +190,10 @@ var myFullpage = new fullpage('#fullpage', {
 	scrollOverflowOptions: null,
 	touchSensitivity: 15,
 	bigSectionsDestination: null,
-
 	//Accessibility
 	keyboardScrolling: true,
 	animateAnchor: true,
 	recordHistory: true,
-
 	//Design
 	controlArrows: true,
 	verticalCentered: true,
@@ -210,13 +208,10 @@ var myFullpage = new fullpage('#fullpage', {
 	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 	cards: false,
 	cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
-
 	//Custom selectors
 	sectionSelector: '.section',
 	slideSelector: '.slide',
-
 	lazyLoading: false,
-
 	//events
 	onLeave: function(origin, destination, direction){},
 	afterLoad: function(origin, destination, direction){},
@@ -226,9 +221,7 @@ var myFullpage = new fullpage('#fullpage', {
 	afterResponsive: function(isResponsive){},
 	afterSlideLoad: function(section, origin, destination, direction){},
 	onSlideLeave: function(section, origin, destination, direction){}
-
 });
-
 </script>
 
 <div id="fp-nav" class="fp-right"
