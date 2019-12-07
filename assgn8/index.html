@@ -17,7 +17,7 @@
 	<!-- about section -->
 	<div class="section" class="fp-auto-height-responsive" style="background-color:#c39e9e">
 		<!-- navigation bar -->
-		<nav>
+		<nav id="navbar">
 			<ul>
 				<li><div id="cz"><a href="#home">CZ</a></div></li>
 				<li><a class="nav" href="#education">EDUCATION</a></li>
@@ -152,6 +152,22 @@
 		<img class="background" src=https://i.ibb.co/prpBDgZ/footer.png>
 	</div>
 </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
 
 <!-- implementing javascript library fullpage.js -->
 <script type="text/javascript">
